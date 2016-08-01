@@ -1,0 +1,59 @@
+<link rel="import" href="polymer/polymer.html">
+<link rel="import" href="iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="iron-icons/iron-icons.html">
+<link rel="import" href="paper-icon-button/paper-icon-button.html">
+<link rel="import" href="app-layout/app-scroll-effects/app-scroll-effects.html">
+<link rel="import" href="app-layout/app-header/app-header.html">
+<link rel="import" href="app-layout/app-header-layout/app-header-layout.html">
+<link rel="import" href="app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="app-layout/demo/sample-content.html">
+
+<dom-module id="stefan-merkel">
+  <template>
+    <style></style>
+    <app-header-layout>
+      <app-header reveals effects="waterfall">
+        <app-toolbar class="toolbar">
+          <div class="tabs">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </app-toolbar>
+      </app-header>
+      <header>
+        <h2>Welcome To stefanmerkel.github.com</h2>
+        <p>Made with made with Love</p>
+      </header>
+      <section id="about">
+        <div class="container">
+          <div>
+            <img src="//app-layout-assets.appspot.com/assets/landing-page/berries.jpg">
+          </div>
+          <div>
+            <h3>About</h3>
+            <p>Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea. Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.</p>
+            <p>Convenire definiebas scriptorem eu cum. Sit dolor dicunt consectetuer no. Convenire definiebas scriptorem eu cum. Sit dolor dicunt consectetuer no.</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <div>
+            <img src="//app-layout-assets.appspot.com/assets/landing-page/red-onion.jpg">
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <p>Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea. Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.</p>
+            <p>Convenire definiebas scriptorem eu cum. Sit dolor dicunt consectetuer no. Convenire definiebas scriptorem eu cum. Sit dolor dicunt consectetuer no.</p>
+          </div>
+        </div>
+      </section>
+    </app-header-layout>
+  </template>
+  <script>
+  Polymer({
+    is: 'stefan-merkel'
+    });
+  </script>
+</dom-module>
